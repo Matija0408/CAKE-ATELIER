@@ -35,11 +35,11 @@ function borderChange(){
 window.onload = function(){
   var path = location.pathname;
   //Compares current var path value, and if same, inserts .currentpage class into the nav link
-  if(path == "CAKE-ATELIER/index.html"){
+  if(path == "/CAKE-ATELIER/index.html"){
     document.getElementById("about").className = "currentpage";
-  }else if (path == "CAKE-ATELIER/gallery.html"){
+  }else if (path == "/CAKE-ATELIER/gallery.html"){
     document.getElementById("gallery").className = "currentpage";
-  }else if(path == "CAKE-ATELIER/contact.html"){
+  }else if(path == "/CAKE-ATELIER/contact.html"){
     document.getElementById("contact").className = "currentpage";
   }
   console.log(location.pathname);
