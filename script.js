@@ -35,13 +35,14 @@ function borderChange(){
 window.onload = function(){
   var path = location.pathname;
   //Compares current var path value, and if same, inserts .currentpage class into the nav link
-  if(path == "/index.html"){
+  if(path == "cake-atelier/index.html"){
     document.getElementById("about").className = "currentpage";
-  }else if (path == "/gallery.html"){
+  }else if (path == "cake-atelier/gallery.html"){
     document.getElementById("gallery").className = "currentpage";
-  }else if(path == "/contact.html"){
+  }else if(path == "cake-atelier/contact.html"){
     document.getElementById("contact").className = "currentpage";
   }
+  console.log(location.pathname);
 //Inserts an img into the div with mainimg class
 //mainimg css background removed with @media and this one insterter as HTML element
   var x = document.createElement('img');  
