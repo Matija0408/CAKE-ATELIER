@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Cake and Cookies</title>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_VVVlOcdR0IfL1DoKt7ShS");
+    })();
+  </script>
+
+
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_VVVlOcdR0IfL1DoKt7ShS");
+    })();
+  </script> -->
+  <!-- <script type="text/javascript">
+    // (function () {
+    //   var templateParams = {
+    //     name: "Matija",
+    //     notes: "Check this out!"
+    //   };
+    //   emailjs.init("user_VVVlOcdR0IfL1DoKt7ShS");
+    //   emailjs.send('gmail_cake_and_cookies', 'template_cb2k35k', templateParams)
+    // })();
+  </script> -->
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="wrapper">
+    <div class="logo">
+      <h1>At Simona's</h1>
+    </div>
+    <a href="#" class="burger-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <nav class="navbar">
+      <ul>
+        <li><a id="about" href="index.html">About</a></li>
+        <li><a id="gallery" href="gallery.html">Gallery</a></li>
+        <li><a id="contact" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="contact-wrap">
+    <!-- EMAIL CONTACT FORM -->
+    <div class="mail-contact">
+      <div class="mail-form">
+        <h2>Get in touch</h2>
+        <p>Request samples, a consultation or just say hi.<br> We'd love to hear from you.</p>
+        <form action="#" onsubmit="return sendMail(this);">
+          <input onclick="borderChange()" type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="emailaddress" placeholder="Your email" required>
+          <textarea name="textarea" id="" placeholder="What would you like us to bake for you?..."></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div id="mailside" class="mail-black"></div>
+    <!-- GOOGLE MAPS SECTION -->
+    <div class="map">
+      <div class="location">
+        <div>
+          <h2>Find us</h2>
+          <br>
+          <p>Main St, Naas East,<br>
+            Naas, Co. Kildare,<br>
+            W91 PKN1</p>
+          <br>
+          <P>Mobile: +353872349876<br>
+            Tel: +35345683567<br>
+            email: test.email@gmail.com</P>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div id="map" class="map-box"></div>
+    </div>
+    <div class="map-black"></div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnkbpXZE-afbQdXR9W_MRo3Q3Pr-yglbQ&callback=initMap">
+    </script>
+</body>
+
+</html>

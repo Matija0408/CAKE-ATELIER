@@ -1,0 +1,674 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+/* GRID AREA */
+
+/* .logo {
+  grid-area: logo;
+} */
+
+/* .navbar {
+  grid-area: header;
+} */
+
+.dedication-p {
+  grid-area: dedication-p;
+}
+
+.dedication-img {
+  grid-area: dedication-img;
+}
+
+.personal-p {
+  grid-area: personal-p;
+}
+
+.personal-img {
+  grid-area: personal-img;
+}
+
+.mainimg {
+  grid-area: mainimg;
+}
+
+.goal {
+  grid-area: goal;
+}
+.goal-header{
+  grid-area: goal-header;
+}
+
+.goal-btn{
+  grid-area: goal-btn;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.product-range-h2 {
+  grid-area: product-range-h2;
+}
+
+/* .flex-container {
+  grid-area: flex-container;
+} */
+
+.contact-wrap {
+  grid-area: contact-wrap;
+}
+
+.mail-contact {
+  grid-area: mail-contact;
+}
+
+.map {
+  grid-area: map;
+}
+
+.mail-black{
+  grid-area: mail-black;
+}
+
+.map-black{
+  grid-area: map-black;
+}
+
+
+/* GRID AREA */
+
+.logo {
+  align-self: center;
+  /* text-align: center; */
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 1;
+}
+
+.currentpage{
+  color: orange !important;
+  text-shadow:0px 0px 3px orange;
+  text-decoration: underline;
+}
+
+.currentpage:hover{
+  color:orange;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar ul{
+  display:flex;
+  margin-right: 12rem;
+}
+
+.navbar ul li {
+  padding: 0 2rem;
+}
+
+.navbar ul li a{
+  color:white;
+  font-size: 1.5rem;
+  transition-duration: 0.3s;
+}
+
+.logo{
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin: 1rem 0 1rem 12rem;
+}
+
+.navbar ul li a:hover {
+  color: rgb(185, 185, 185);
+}
+
+/* li {
+  color: white;
+  float: left;
+  list-style-type: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+} */
+
+/* li a {
+  display: inline-block;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.3s;
+}  */
+
+
+
+.burger-menu{
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  width: 30px;
+  height: 20px;
+  display: none;
+  justify-content: space-between;
+  flex-flow: column;
+}
+
+.burger-menu .bar{
+  background: white;
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+img {
+  width: 100%;
+}
+
+.mainwrap {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "mainimg mainimg mainimg mainimg mainimg mainimg" ". dedication-img dedication-img dedication-p dedication-p ." "goal goal goal goal goal goal" 
+  ". goal-header goal-header goal-header goal-header ."
+  ". personal-p personal-p personal-img personal-img ."
+  ". . goal-btn goal-btn . ."
+  "footer footer footer footer footer footer";
+}
+
+.mainimg {
+  background-image: url(assets/img/sweets-887722_1920.jpg);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 60vh;
+}
+
+#landingPageFirstImage{
+  display:none;
+}
+
+.goal {
+  background: url(assets/img/apple-pie-474954_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: 100%;
+  height: 50vh;
+}
+
+#landingPageGoalImg{
+  display:none;
+}
+
+.dedication-img,
+.dedication-p,
+.personal-p,
+.personal-img {
+  padding: 3rem;
+}
+
+.goal-header h2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  text-decoration: underline;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  border-radius: -10%;
+  padding: 3rem;
+}
+
+.goal-btn button{
+  background: white;
+  border-radius: 50%;
+  padding:1rem;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  display: block;
+  width: 15rem;
+  margin: 8rem auto 8rem auto;
+  border: 2px solid orange;
+  cursor: pointer;
+  box-shadow: 0 0 3px 2px orange;
+}
+
+.goal-btn a{
+  color: black;
+}
+
+.goal-btn button:hover{
+  box-shadow: 0 0 11px 3px orange;
+}
+
+.dedication-p,
+.personal-p {
+  align-self: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:400;
+  color: rgb(75, 75, 75);
+  letter-spacing: 2px;
+  line-height: 1.6em;
+}
+
+.dedication-p h2, .personal-p h2{
+  margin-bottom: 1.5em;
+  color: rgb(53, 53, 53);
+}
+
+.footer {
+  height: 5rem;
+  background: black;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-icons {
+  margin: 0 auto;
+}
+
+i {
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.gallery-wrap {
+  margin-top: 8%;
+  margin-bottom: 4%;
+}
+
+.product-range-h2 {
+  font-family: 'Dancing Script', cursive;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 3%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-container img {
+  box-shadow: 10px 20px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.imgcontainer{
+  position: relative;
+  width: 24%;
+  margin: 1%;
+}
+
+.imgcontainer img{
+  display: block;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 100%;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 20%;
+  visibility: hidden;
+}
+
+.imgcontainer:hover .overlay{
+  opacity: 0.6;
+}
+
+.imgcontainer:hover .text{
+  visibility: visible;
+}
+
+
+
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:auto;
+  grid-template-areas: "mail-contact mail-black" "map-black map" "footer footer";
+}
+
+.mail-black{
+  background: url(assets/img/kobby-mendez-idTwDKt2j2o-unsplash.jpg)center center/cover no-repeat;
+  border-radius: 0 0 0 100%;
+  transition: 1.5s;
+}
+
+.map-black{
+  background:black;
+  border-radius: 0 100% 0 0;
+}
+
+.mail-contact {
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+  line-height: 1.6rem;
+}
+
+.mail-form {
+  width: 50%;
+  align-self: center;
+}
+
+.mail-form input {
+  display: block;
+  width: 100%;
+}
+
+.mail-form h2{
+  margin-bottom: 1.5em;
+  color: rgb(53, 53, 53);
+}
+
+.mail-form p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:400;
+  color: rgb(75, 75, 75);
+  letter-spacing: 2px;
+  line-height: 1.6em;
+  margin-bottom: 2rem;
+}
+
+.map {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 95vh;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 0.5rem;
+  resize: vertical;
+  overflow: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+  border:1px solid rgb(145, 145, 145);
+  color: rgb(81, 81, 81);
+  transition: 0.2s;
+}
+
+textarea:focus{
+  box-shadow: 0px 0px 10px 3px rgba(145, 145, 145, 0.671);
+}
+
+input[type=text], input[type=email]{
+  width: 70%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: rgb(81, 81, 81);
+  margin: 0.5rem 0 0.5rem 0;
+  border: 1px solid rgb(145, 145, 145);
+  transition: 0.2s;
+}
+
+input:focus{
+  box-shadow: 0px 0px 10px 3px rgba(145, 145, 145, 0.671);
+}
+
+input[type=submit]{
+  width: 90px;
+  background: black;
+  color: white;
+  border: 1px solid orange;
+  border-radius: 10%;
+  padding:0.8rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+input[type=submit]:hover{
+  box-shadow: 0px 0px 10px 3px orange;
+}
+
+.map-box {
+  width: 65%;
+  height: 30%;
+  align-self: center;
+  border: 2px solid  rgb(202, 202, 202);
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  width: 65%;
+  height: 30%;
+  align-self: center;
+}
+
+.location p{
+font-family: 'Montserrat', sans-serif;
+font-weight:400;
+color: rgb(75, 75, 75);
+letter-spacing: 2px;
+line-height: 1.6em;
+}
+
+.location h2{
+  color: rgb(53, 53, 53);
+}
+
+@media (max-width: 1024px){
+  .burger-menu{
+    display: flex;
+  }
+  .logo{
+    margin: 1rem 0 1rem 1rem;
+  }
+
+  .navbar{
+    display: none;
+    width: 100%;
+  }
+
+  .active{
+    display: flex;
+  }
+
+  .wrapper{
+    flex-flow: column;
+    position: inherit;
+    /* display: flex;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1; */
+  }
+
+  .navbar ul{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar li{
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul li, .navbar ul li a {
+    padding: .6rem;
+  }
+
+  .mainwrap {
+    display: flex;
+    flex-flow: column;
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "mainimg mainimg mainimg mainimg mainimg mainimg" ". dedication-img dedication-img dedication-p dedication-p ." "goal goal goal goal goal goal" 
+    ". . goal-header goal-header . ."
+    ". personal-p personal-p personal-img personal-img ."
+    ". . goal-btn goal-btn . ."
+    "footer footer footer footer footer footer"; */
+  }
+
+  .mainimg {
+    background-image: none;
+    height: auto;
+    /* display: none
+    background-image: url(assets/img/sweets-887722_1920.jpg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60vh; */
+  }
+  #landingPageFirstImage{
+    display: block;
+  }
+  .goal {
+    background-image: none;
+    height: auto; 
+    /* background: url(assets/img/apple-pie-474954_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 50vh;*/
+  }
+  
+  #landingPageGoalImg{
+    display: block;
+    padding: 3rem 0;
+  }
+
+  .goal-header h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    text-decoration: underline;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    border-radius: -10%;
+    /* padding:13rem 0 10rem 0; */
+    padding: 3rem;
+  }
+
+  .dedication-img, .personal-img{
+    padding: 3rem 0;
+  }
+ 
+  .wrapper{
+    position: relative;
+  }
+
+  .navbar{
+    position: absolute;
+    top: 5em;
+    background: black;
+  }
+
+  .contact-wrap {
+    display: flex;
+    flex-flow: column;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
+    grid-template-areas: "mail-contact mail-black" "map-black map" "footer footer"; */
+  } 
+
+  .mail-contact{ 
+    margin-top: 5em;
+    height: auto;
+  }
+
+  .mail-form, .location{
+    width: 90%;
+  }
+
+  .map-box{
+    width: 90%;
+    height: 500px;
+    margin: 2em 0;
+  }
+
+  .mail-black{
+    display: none;
+  }
+
+  .mail-form{
+    margin-bottom: 3em;
+  }
+
+  .map-black{
+    display: none;
+  }
+
+  /* .contact-background{
+    background: url(assets/img/alex-loup-On2VseHUDXw-unsplash.jpg)center center/cover no-repeat;
+  } */
+}
+
+@media (max-width: 599px){
+  .imgcontainer{
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px){
+  .imgcontainer{
+    width: 48%;
+  }
+
+}
