@@ -1,6 +1,6 @@
 // GOOGLE MAPS
 function initMap() {
-  var bakery = { lat: 46.315745, lng: 16.32326 };
+  var bakery = { lat: 46.317985, lng: 16.330796 };
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
     center: bakery,
@@ -29,7 +29,7 @@ function sendMail(contactForm) {
 //Border change on the picture, on the contact page
 //When user clicks on the "Your name" field in the form, border-radius value is changed.
 function borderChange(){
-  document.getElementById("mailside").style.cssText = "border-radius: 100% 0 0 0.4%";
+  document.getElementById("mailside").style.cssText = "border-radius: 40% 0 0 0.4%";
 }
 // Highlights nav links orrange
 window.onload = function(){
@@ -42,11 +42,11 @@ window.onload = function(){
   }else if(path == "/CAKE-ATELIER/contact.html"){
     document.getElementById("contact").className = "currentpage";
   }
-  console.log(location.pathname);
+  // console.log(location.pathname);
 //Inserts an img into the div with mainimg class
 //mainimg css background removed with @media and this one insterter as HTML element
   var x = document.createElement('img');  
-  x.setAttribute('src', 'assets/img/sweets-887722_1920.jpg');
+  x.setAttribute('src', 'assets/img/Princes\ krafne.jpg');
   x.setAttribute('width', '100%');
   x.setAttribute('height', 'auto');
   x.setAttribute('alt', 'some cakes');
