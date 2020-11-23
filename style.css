@@ -738,8 +738,13 @@ line-height: 1.6em;
   .gallery-img-container{
     width: 100%;
   }
+
   .navbar {
     top: 4em;
+  }
+
+  .map{
+    margin-top: 4em;
   }
 }
 
