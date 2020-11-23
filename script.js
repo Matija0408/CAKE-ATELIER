@@ -54,7 +54,7 @@ window.onload = function(){
 
 
   var y = document.createElement('img');
-  y.setAttribute('src', 'assets/img/apple-pie-474954_1920.jpg');
+  y.setAttribute('src', 'assets/img/desert u casama.jpg');
   y.setAttribute('width', '100%');
   y.setAttribute('height', 'auto');
   y.setAttribute('alt', 'apple pie');
