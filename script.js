@@ -9,18 +9,17 @@ function initMap() {
 }
 //MAIL CONTACT FORM
 function sendMail(contactForm) {
-  emailjs
-    .send("gmail", "cake_cookies", {
+  emailjs.send("gmail", "cake_cookies", {
       from_name: contactForm.name.value,
       from_email: contactForm.emailaddress.value,
       message: contactForm.textarea.value,
     })
     .then(
       function (response) {
-        alert("Email successfully sent!", response);
+        alert("E-pošta je uspješno poslana!", response);
       },
       function (error) {
-        console.log("FAILED", error);
+        alert("E-pošta nije uspješno poslana", error);
       }
     );
   return false;

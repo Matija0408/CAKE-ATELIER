@@ -78,8 +78,8 @@ a{
   grid-area: mail-black;
 }
 
-.map-black{
-  grid-area: map-black;
+.contact-info{
+  grid-area: contact-info;
 }
 
 
@@ -445,7 +445,8 @@ i {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows:auto;
-  grid-template-areas: "mail-contact mail-black" "map-black map" "footer footer";
+  /* row-gap: 10em; */
+  grid-template-areas: "mail-contact mail-black" "contact-info map" "footer footer";
 }
 
 .mail-black{
@@ -454,10 +455,10 @@ i {
   transition: 1.5s;
 }
 
-.map-black{
+/* .map-black{
   background: url(assets/img/Princes\ krafne2.jpg)center center/cover no-repeat;
   border-radius: 0 100% 0 0;
-}
+} */
 
 .mail-contact {
   display: flex;
@@ -469,7 +470,7 @@ i {
 .mail-form {
   width: 50%;
   align-self: center;
-  margin-top: 11em;
+  margin-top: 13em;
 }
 
 .mail-form input {
@@ -550,18 +551,25 @@ input[type=submit]:hover{
 }
 
 .map-box {
-  width: 65%;
-  height: 30%;
+  width: 80%;
+  height: 50%;
   align-self: center;
   border: 2px solid  rgb(202, 202, 202);
+  margin-top: 7em;
+}
+
+.contact-info{
+  display: flex;
+  justify-content: center;
 }
 
 .location{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   width: 65%;
   height: 30%;
   align-self: center;
+  justify-content: center;
 }
 
 .location p{
@@ -725,9 +733,9 @@ line-height: 1.6em;
     margin-bottom: 3em;
   }
 
-  .map-black{
+  /* .map-black{
     display: none;
-  }
+  } */
 
   /* .contact-background{
     background: url(assets/img/alex-loup-On2VseHUDXw-unsplash.jpg)center center/cover no-repeat;
